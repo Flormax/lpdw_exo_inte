@@ -1,0 +1,115 @@
+.main-header nav
+  float: right
+  margin-top: 0
+  margin-left: 0
+
+.container
+  max-width: 100%
+  margin: auto
+  position: fixed
+  top: 0
+  min-height: 75px
+  background-color: white
+  border-bottom: solid 3px #1FBED6
+  z-index: 1001
+
+@media screen and (max-width: 650px)
+  .large-screen
+    display: none
+  .container
+    width: 100%
+
+@media screen and (min-width: 651px)
+  .small-screen
+    display: none
+
+.main-header
+  position: relative
+  margin: auto
+  background-color: #fff
+
+.main-header div img
+  float: left
+
+.main-header div p
+  margin-top: 0
+  margin-left: 2%
+  color: #636359
+  float: left
+  width: 71%
+
+/* Logo */
+.blue_title
+  color: #1FBED6
+
+.logo
+  float: left
+  min-width: 25%
+  font-weight: bold
+
+.logo h1
+  font-size: 1em
+
+/* Languages*/
+.lang
+  float: right
+  width: 9%
+
+.lang img
+  width: 27px
+  margin-left: 14%
+
+/* Menu*/
+#menu-deroulant, #menu-deroulant ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+#menu-deroulant
+  text-align: center
+  margin-top: 3.5%
+  font-weight: bold
+
+#menu-deroulant li a
+  display: inline
+  text-transform: uppercase
+  padding: 0 7px 0 0
+
+#menu-deroulant li
+  display: inline-block
+
+#menu-deroulant li:last-child:after
+  content: ""
+
+#menu-deroulant ul li
+  display: inherit
+
+#menu-deroulant a
+  text-decoration: none
+  display: block
+  color: #575757
+
+#menu-deroulant ul
+  position: absolute
+  left: -999em
+  text-align: left
+  z-index: 1000
+
+#menu-deroulant li:hover ul
+  left: auto
+
+#menu-deroulant li:hover a
+  color: #1FBED6
+
+#menu-deroulant li:hover ul li a
+  background-color: #1FBED6
+  color: #FFF
+  padding: 10%
+  display: inline-block
+  margin-top: 3px
+
+#menu-deroulant li:hover ul li:first-child
+  margin-top: 13px
+
+#menu-deroulant > li:after
+  content: "|"
